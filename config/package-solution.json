@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "tock-sharepoint-client-side-solution",
+    "id": "fcf7fbcd-5b4b-4911-9287-90234453fe6d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadBasic.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/tock-sharepoint.sppkg"
+  }
+}
