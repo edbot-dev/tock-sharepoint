@@ -1,10 +1,23 @@
 # tock-sharepoint
 
+SharePoint WebPart for TOCK
+
 ## Summary
 
-Short summary on functionality and used technologies.
+It is possible to integrate with one or multiple chatbots within a page, using SharePoint WebParts for Tock. Each bot integration is responsive and adapts to the SharePoint page layout (wide, columns, etc.) and user device (desktop, mobile, landscape...).
 
-[picture of the solution in action, if possible]
+Add a new web part
+
+![Drag Racing](tock-webpart2.png)
+
+Configure your bot endpoint
+
+![Configuration](tock-webpart1.png)
+
+Multiple chatbots within a page 
+
+![Multiple chatbots within a page](tock-webpart3.png)
+
 
 ## Used SharePoint Framework Version
 
@@ -19,55 +32,29 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites?
-
-## Solution
-
-Solution|Author(s)
---------|---------
-folder name | Author details (name, company, twitter alias with link)
-
-## Version history
-
-Version|Date|Comments
--------|----|--------
-1.1|March 10, 2021|Update comment
-1.0|January 29, 2021|Initial release
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+> Try to Create your first bot with Tock Studio [Tock Studio](https://doc.tock.ai/tock/en/guide/studio/)
+> 
 
 ---
 
 ## Minimal Path to Awesome
 
 - Clone this repository
-- Ensure that you are at the solution folder
 - in the command-line run:
-  - **npm install**
-  - **gulp serve**
+  - Install dependencies
 
-> Include any additional steps as needed.
+    `npm install`
 
-## Features
+  - Start hot reload server
 
-Description of the extension that expands upon high-level summary above.
+    `gulp serve`
 
-This extension illustrates the following concepts:
+  - Prepare the web part resources to deploy
 
-- topic 1
-- topic 2
-- topic 3
+    `gulp bundle --ship`
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+  - Package solution
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
-
-## References
-
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+    `gulp package-solution --ship`
+    
+  - Deploy generated solution (sharepoint/solution/tock-sharepoint.sppkg) to sharepoint application catalog 
