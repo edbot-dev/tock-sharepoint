@@ -24,7 +24,7 @@ export default class TockWebPart extends BaseClientSideWebPart<ITockWebPartProps
     ReactDom.unmountComponentAtNode(this.domElement);
   }
 
-  protected get dataVersion(): Version {
+  protected get dataWPVersion(): Version {
     return Version.parse('1.0');
   }
 

@@ -11,6 +11,8 @@ dist
 lib
 solution
 temp
+release
+sharepoint
 *.sppkg
 
 # Coverage directory used by tools like istanbul
